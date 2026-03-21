@@ -1,0 +1,306 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{0.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-14pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{%
+  \item[]\hspace{\labelwidth}\hspace{-\labelsep}%
+  {-} \hspace{1pt}%
+  \small{#1}%
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    {\Huge \scshape Kyusik Yang} \\[5pt]
+    19 West 4th Street, New York, NY 10012 \\[3pt]
+
+    \raisebox{-0.2\height}{\faGithub}\ \href{https://github.com/kyusik-yang}{\underline{github.com/kyusik-yang}} ~
+    \raisebox{-0.2\height}{\faEnvelope}\ \href{mailto:kyusik.yang@nyu.edu}{\underline{kyusik.yang@nyu.edu}}
+
+    \vspace{-3pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University}{September 2021 -- Present}
+      {Ph.D. Student, Wilf Family Department of Politics}{New York, NY}
+    \resumeSubheading
+      {Yonsei University}{August 2017}
+      {M.A. in Political Science}{Seoul, Republic of Korea}
+    \resumeSubheading
+      {Yonsei University}{February 2016}
+      {B.A. in Political Science, Minor in Economics}{Seoul, Republic of Korea} \vspace{0pt}
+  \resumeSubHeadingListEnd
+
+%------RESEARCH INTERESTS-------
+\section{RESEARCH INTERESTS}
+Political Institutions, Executive Politics, American Politics, Korean Politics, Computational Social Science
+ \vspace{0pt}
+
+
+
+%-----------EXPERIENCE-----------
+
+\section{RESEARCH AND WORK EXPERIENCE}
+    \vspace{-4pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Republic of Korea Air Force} $|$ \emph{Lieutenant, Air Force Headquarters}}{February 2018 -- May 2021}
+           \resumeItemListStart
+            \resumeItem{Personnel and Administration Officer}
+          \resumeItemListEnd
+          \vspace{-15pt}
+      \resumeProjectHeading
+          {\textbf{Korea Observer} $|$ \emph{Editorial Assistant}}{August 2017 -- January 2018}
+          % \resumeItemListStart
+            % \resumeItem{Arranged Online Conversion of \emph{Korea Observer}}
+          % \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{0pt}
+
+
+
+%-----------PROJECTS-----------
+\section{PUBLICATIONS}
+    \vspace{-4pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {}{}
+        \vspace{-25pt}
+          \resumeItemListStart
+            \resumeItem{Jin, Youngjae and Kyusik Yang. 2026. ``South Korea in 2025: Democratic Comeback and the Challenges of Institutional Resilience.'' \emph{Asian Survey}, forthcoming.}\\[0.7em]
+            \resumeItem{Jin, Youngjae and Kyusik Yang. 2025. ``Resilient Democracy or Fragile Democracy? The Declaration of Martial Law and Presidential Impeachment in South Korea.'' \emph{Asian Survey} 65(6): 729-750.}\\[0.7em]
+            \resumeItem{Cho, Eunmi, Sinjae Kang, Kyusik Yang, Yongjai Yu, and Yoonseok Lee. 2024. ``Measuring Legislators' Ideology and Analyzing Ideological Differences Across Standing Committees Using Wordfish: Evidence from the Minutes of Standing Committee Meetings in the 19th and 20th National Assembly.'' \emph{Journal of Research Methodology} 9(3): 33-79. [in Korean]}\\[0.7em]
+            \resumeItem{Yang, Kyusik and Youngjae Jin. 2017. ``Appropriate Size for the National Assembly of the Republic of Korea: Differences Resulting from Constitutional Structures.'' \emph{Journal of Parliamentary Research} 12(1): 277-281. \hspace{40pt} [in Korean]}
+          \resumeItemListEnd
+          \vspace{-10pt}
+
+    \resumeSubHeadingListEnd
+\vspace{0pt}
+
+\section{WORKING PROJECTS}
+    \vspace{-4pt}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+          {}{}
+          \vspace{-25pt}
+          \resumeItemListStart
+            \resumeItem{``Speech and Voice in Politics: Multimodal Analysis of Presidential Addresses to the Korean National Assembly'' (Under Review)}\\[0.7em]
+            \resumeItem{``Local Participation in Federal Enforcement: Evidence from the 287(g) Program''}\\[0.7em]
+            \resumeItem{``Bureaucratizing Justice: Executive Control in Immigration Courts'' (with Nathan Lee)}\\[0.7em]
+            \resumeItem{``Bureaucratic Control and Compliance: Evidence from Assistant U.S. Attorneys''}\\[0.7em]
+                % \resumeSubItem{Originally collected individual-level federal prosecution data from PACER}
+            \resumeItem{``Korean Politics, in Short: A Multimodal Analysis of YouTube Shorts by Members of the National Assembly'' (with Yongjai Yu)}\\[0.7em]
+                % \resumeSubItem{Collected and analyzed multimodal embeddings (text--audio--vision) of legislative YouTube Shorts.}
+            \resumeItem{``Populist Strategies in Korean Election Manifestos: An LLM-Based Quantitative Analysis''}\\[0.7em]
+            \resumeItem{``Expertise on Demand: Executive Power and the Politics of Policy Knowledge in South Korea'' (with Sunghyun Kim and Jaehak Kim)}\\[0.7em]
+            \resumeItem{``Who Owns North Korea Policy? Bureaucratic Competition and Issue Ownership in South Korea'' (with Jaeyoung Hur)}\\[0.7em]
+            \resumeItem{``Style Over Substance: How Citizens Evaluate the Quality of Public Petitions'' (with Seo-young Silvia Kim and Byungkoo Kim)}\\[0.7em]
+
+            \resumeItem{``Polarization in Local Politics: Text-as-Data Analysis of Municipal Meetings''}\\[0.7em]
+                % \resumeSubItem{Embedding regression on local governments' meeting video transcripts from LocalView}
+            \resumeItem{``Unbalanced Battlegrounds: Interest Groups' Venue Choice Revisited''}
+                % \resumeSubItem{Originally collected data on executive lobbying in Texas}
+          \resumeItemListEnd
+
+%------TEACHING EXPERIENCE-------
+\section{TEACHING EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    % ----- New York University -----
+    \resumeSubheading
+      {New York University}{}
+      {Power and Politics in America (Teaching Assistant)}{Fall 2023, Spring 2024, Fall 2025}\\[0.5em]
+        \resumeSubSubheading{Introduction to Research Methods in Political Science (Teaching Assistant)}{Spring 2026}\\[1.6em]
+
+    % ----- Yonsei University -----
+    \resumeSubheading
+      {Yonsei University}{}
+      {Introduction to Political Science (Teaching Assistant)}{Spring 2015, Spring 2016, Fall 2016, Spring 2017}\\[0.4em]
+        \resumeSubSubheading{Comparative Politics (Teaching Assistant)}{Spring 2015, Spring 2017}\\[1.2em]
+        \resumeSubSubheading{Social Science Research Methods (Teaching Assistant)}{Spring 2016}\\[1.2em]
+        \resumeSubSubheading{Korean Politics (Teaching Assistant)}{Fall 2015}\\[1.2em]
+        \resumeSubSubheading{Party Politics (Teaching Assistant)}{Fall 2014}
+
+
+  \resumeSubHeadingListEnd
+
+
+%------HONORS AND AWARDS-------
+\section{HONORS AND AWARDS}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {New York University}{}
+      {George Downs Research Prize}{March 2024}\\[0.5em]
+        \resumeSubSubheading
+        {MacCracken Fellowship}{September 2021 -- Present}\\[1.2em]
+        \resumeSubSubheading
+        {Ralph M. Cariello and Ilona Cariello Permanent Fellowship}{2021, 2022, 2023, 2025}\\[1.2em]
+        \resumeSubSubheading
+        {Summer Research Funding}{2022, 2023, 2024}\\[1.5em]
+
+    \resumeSubheading
+      {Presidential Archives, Republic of Korea}{}
+      {Outstanding Research Paper Award}{December 2025}\\[1em]
+
+    \resumeSubheading
+      {Ministry of Education, Republic of Korea}{}
+      {Brain-Korea 21 Plus Scholarship}{March 2016 -- August 2017}\\[1em]
+
+    \resumeSubheading
+      {Yonsei University}{}
+      {Full Scholarship for Integrated Bachelor's--Master's Program}{March 2016 -- August 2017}\\[0.5em]
+        \resumeSubSubheading
+        {Full Scholarship for Study Abroad Program (UCLA)}{September 2013 -- August 2014}
+
+  \resumeSubHeadingListEnd
+
+
+%------PROFESSIONAL TRAINING-------
+\section{PROFESSIONAL TRAINING}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Korea Advanced Institute of Science and Technology}{}
+      {Summer Institute in Computational Social Science (Participant)}{June 2024}\\[0.8em]
+
+    \resumeSubheading
+      {National University of Singapore}{}
+      {IPSA--NUS Summer School for Social Science Research Methods (Participant)}{July 2016}
+
+  \resumeSubHeadingListEnd
+
+%-----------INVOLVEMENT---------------
+\section{PROFESSIONAL SERVICE}
+    \textbf{Reviewer:} \textit{Asian Survey, Korea Observer}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{RELEVANT SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Computing Skills:}{ R, Stata, Python, \LaTeX} \\
+     \textbf{Languages:}{ Korean (native), English (fluent), French (basic)} \\
+    }}
+ \end{itemize}
+
+
+\resumeSubHeadingListEnd
+
+\end{document}
