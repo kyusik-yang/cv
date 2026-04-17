@@ -23,13 +23,13 @@ jobs:
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: cv.tex
+          root_file: cv-kyusik-yang.tex
 
       - name: Prepare pages
         run: |
           mkdir -p _site
-          cp cv.pdf _site/cv.pdf
-          echo '<html><head><meta http-equiv="refresh" content="0;url=cv.pdf"></head></html>' > _site/index.html
+          cp cv-kyusik-yang.pdf _site/cv-kyusik-yang.pdf
+          echo '<html><head><meta http-equiv="refresh" content="0;url=cv-kyusik-yang.pdf"></head></html>' > _site/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
