@@ -89,6 +89,16 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+% Subheading whose institution name runs over two lines
+\newcommand{\resumeSubheadingTwoLine}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \\
+      \textbf{#2} & \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
@@ -152,7 +162,7 @@
 
 %------RESEARCH INTERESTS-------
 \section{RESEARCH INTERESTS}
-Political Institutions, Executive Politics, American Politics, Korean Politics, Computational Social Science
+Political Institutions, Executive Politics, Artificial Intelligence and Politics, Computational Social Science
  \vspace{0pt}
 
 
@@ -198,6 +208,7 @@ Political Institutions, Executive Politics, American Politics, Korean Politics, 
           {}{}
           \vspace{-25pt}
           \resumeItemListStart
+            \resumeItem{``How Generative AI Enters Government: Evidence from Press Releases in South Korea''}\\[0.7em]
             \resumeItem{``Style Over Substance: How Citizens Evaluate the Quality of Public Petitions'' (with Seo-young Silvia Kim and Byungkoo Kim) (R\&R, \emph{Policy Studies Journal})}\\[0.7em]
             \resumeItem{``Local Participation in Federal Enforcement: Evidence from the 287(g) Program''}\\[0.7em]
             \resumeItem{``Bureaucratizing Justice: Executive Control in Immigration Courts'' (with Nathan Lee) (Under Review)}\\[0.7em]
@@ -208,10 +219,8 @@ Political Institutions, Executive Politics, American Politics, Korean Politics, 
             \resumeItem{``Populist Strategies in Korean Election Manifestos: An LLM-Based Quantitative Analysis''}\\[0.7em]
             \resumeItem{``Expertise on Demand: Executive Power and the Politics of Policy Knowledge in South Korea'' (with Sunghyun Kim and Jaehak Kim)}\\[0.7em]
             \resumeItem{``When Legislators Are Landlords: Deliberative Capture and the Limits of Financial Disclosure in South Korean Legislative Committees'' (with Yunjung Yang)}\\[0.7em]
-            \resumeItem{``Polarization in Local Politics: Text-as-Data Analysis of Municipal Meetings''}\\[0.7em]
+            \resumeItem{``Polarization in Local Politics: Text-as-Data Analysis of Municipal Meetings''}
                 % \resumeSubItem{Embedding regression on local governments' meeting video transcripts from LocalView}
-            \resumeItem{``Unbalanced Battlegrounds: Interest Groups' Venue Choice Revisited''}
-                % \resumeSubItem{Originally collected data on executive lobbying in Texas}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{0pt}
@@ -240,7 +249,7 @@ Political Institutions, Executive Politics, American Politics, Korean Politics, 
     % ----- New York University -----
     \resumeSubheading
       {New York University}{}
-      {Power and Politics in America (Teaching Assistant)}{Fall 2023, Spring 2024, Fall 2025}\\[0.5em]
+      {Power and Politics in America (Teaching Assistant)}{Fall 2023, Spring 2024, Fall 2025, Fall 2026}\\[0.5em]
         \resumeSubSubheading{Introduction to Research Methods in Political Science (Teaching Assistant)}{Spring 2026}\\[1.6em]
 
     % ----- Yonsei University -----
@@ -291,8 +300,9 @@ Political Institutions, Executive Politics, American Politics, Korean Politics, 
 \section{PROFESSIONAL TRAINING}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Korea Advanced Institute of Science and Technology}{}
+    \resumeSubheadingTwoLine
+      {KDI School of Public Policy and Management}
+      {and the Korea Advanced Institute of Science and Technology}
       {Summer Institute in Computational Social Science (Participant)}{June 2024}\\[0.8em]
 
     \resumeSubheading
